@@ -3,7 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/poral-sandbox",
   "projectType": "application",
-  "tags": [],
+  "tags": ["scope:portal", "client:sandbox", "type:app"],
   "// targets": "to see all targets run: nx show project portal-sandbox --web",
   "targets": {}
 }
