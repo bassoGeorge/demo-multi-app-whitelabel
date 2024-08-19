@@ -1,3 +1,2 @@
-// Use this file to export React client components (e.g. those with 'use client' directive) or other non-server utilities
-
-export * from './lib/shared';
+export * from './lib/api/useAPI';
+export * from './lib/star-services/StarServicesInfo';
