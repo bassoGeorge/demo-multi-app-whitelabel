@@ -18,11 +18,15 @@
       "@multi-app-whitelabel/design-system": [
         "libs/design-system/src/index.ts"
       ],
+      "@multi-app-whitelabel/design-system-utils": [
+        "libs/design-system-utils/src/index.ts"
+      ],
       "@multi-app-whitelabel/design-system/server": [
         "libs/design-system/src/server.ts"
       ],
       "@multi-app-whitelabel/shared": ["libs/shared/src/index.ts"],
-      "@multi-app-whitelabel/shared/server": ["libs/shared/src/server.ts"]
+      "@multi-app-whitelabel/shared/server": ["libs/shared/src/server.ts"],
+      "@multi-app-whitelabel/utils": ["libs/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
