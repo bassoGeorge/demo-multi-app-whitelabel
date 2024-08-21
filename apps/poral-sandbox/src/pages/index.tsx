@@ -1,4 +1,5 @@
-import {  StarServicesInfo } from '@multi-app-whitelabel/shared';
+import { Home } from '@multi-app-whitelabel/p-dashboard';
+import { toDollarsAndCents } from '@multi-app-whitelabel/utils';
 
 export function Index() {
   /*
@@ -8,10 +9,10 @@ export function Index() {
    */
   return (
     <main>
-      <h1>Welcome to your portal</h1>
-      <div>
-        <StarServicesInfo />
-      </div>
+      <Home />
+      <p>
+        In other news, you have {toDollarsAndCents(100000)} in available future benefits
+      </p>
     </main>
   );
 }
