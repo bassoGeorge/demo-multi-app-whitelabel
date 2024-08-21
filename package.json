@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "nx dev sandbox"
+    "dev": "nx dev portal-sandbox"
   },
   "private": true,
   "dependencies": {
