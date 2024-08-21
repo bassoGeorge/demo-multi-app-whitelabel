@@ -30,11 +30,21 @@
               },
               {
                 "sourceTag": "scope:feature",
-                "onlyDependOnLibsWithTags": ["scope:shared"]
+                "onlyDependOnLibsWithTags": [
+                  "scope:global",
+                  "scope:design-system"
+                ]
               },
               {
-                "sourceTag": "scope:portal",
-                "onlyDependOnLibsWithTags": ["scope:feature", "scope:shared", "scope:design-system*"]
+                "sourceTag": "scope:global",
+                "onlyDependOnLibsWithTags": [
+                  "scope:global",
+                  "scope:design-system"
+                ]
+              },
+              {
+                "sourceTag": "product:portal",
+                "notDependOnLibsWithTags": ["/^product:(?!portal$).+$"] // dissallows portal products from using other product libraries
               },
               {
                 "sourceTag": "client:sandbox",

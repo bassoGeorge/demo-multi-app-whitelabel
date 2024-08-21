@@ -1,0 +1,9 @@
+{
+  "name": "p-dashboard",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/p-dashboard/src",
+  "projectType": "library",
+  "tags": ["scope:feature", "product:portal", "type:ui"],
+  "// targets": "to see all targets run: nx show project p-dashboard --web",
+  "targets": {}
+}
