@@ -1,1 +1,1 @@
-export * from './lib/theme-sandbox';
+export * from './lib/SandboxTheme';

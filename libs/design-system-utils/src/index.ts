@@ -1,1 +1,1 @@
-export * from './lib/design-system-utils';
+export * from './lib/ThemeSchematic/ThemeSchematic.model';

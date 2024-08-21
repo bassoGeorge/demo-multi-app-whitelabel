@@ -3,7 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/theme-sandbox/src",
   "projectType": "library",
-  "tags": ["scope:design-system", "scope:design-system-theme", "type:util", "client:sandbox"],
+  "tags": ["scope:design-system", "type:util", "client:sandbox"],
   "// targets": "to see all targets run: nx show project theme-sandbox --web",
   "targets": {}
 }
