@@ -1,0 +1,9 @@
+{
+  "name": "theme-client-a",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/theme-client-a/src",
+  "projectType": "library",
+  "tags": ["scope:design-system", "type:util", "client:client-a"],
+  "// targets": "to see all targets run: nx show project theme-client-a --web",
+  "targets": {}
+}

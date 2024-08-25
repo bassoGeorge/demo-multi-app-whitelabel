@@ -23,6 +23,9 @@
       ],
       "@multi-app-whitelabel/p-dashboard": ["libs/p-dashboard/src/index.ts"],
       "@multi-app-whitelabel/shared": ["libs/shared/src/index.ts"],
+      "@multi-app-whitelabel/theme-client-a": [
+        "libs/theme-client-a/src/index.ts"
+      ],
       "@multi-app-whitelabel/theme-sandbox": [
         "libs/theme-sandbox/src/index.ts"
       ],

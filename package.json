@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "nx dev portal-sandbox"
+    "dev": "yarn dev:sandbox",
+    "dev:sandbox": "nx dev portal-sandbox --port 3000",
+    "dev:client-a": "nx dev portal-client-a --port 3001"
   },
   "private": true,
   "dependencies": {
