@@ -2,12 +2,18 @@ import { ThemeSchematic } from '@multi-app-whitelabel/design-system-utils';
 
 export const SandboxTheme: ThemeSchematic = {
   info: {
-    brandName: 'Sandbox'
+    brandName: 'Sandbox',
   },
   palette: {
+    primary: {
+      main: '#EE7B30',
+    },
+    secondary: {
+      main: '#7DCFB6',
+    },
     warmNeutral: {
-      main: '#E4DEC8',
-      light: '#F8F7F1'
-    }
-  }
-}
+      main: '#F2EDCF',
+      light: '#F6F3DF',
+    },
+  },
+};

@@ -1,1 +1,1 @@
-export * from './lib/theme-client-a';
+export * from './lib/ClientATheme';

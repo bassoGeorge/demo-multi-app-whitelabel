@@ -6,7 +6,7 @@ export function StarServicesInfo() {
     <div>
       <h1>Welcome to StarServicesInfo!</h1>
       <p>You have {toDollarsAndCents(30000)} in available benefits</p>
-      <Button>Hey there</Button>
+      <Button color='secondary' variant='contained'>Hey there</Button>
     </div>
   );
 }
