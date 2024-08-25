@@ -1,0 +1,9 @@
+{
+  "name": "p-shared-assets",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/p-shared-assets/src",
+  "projectType": "library",
+  "tags": ["scope:portal"],
+  "// targets": "to see all targets run: nx show project p-shared-assets --web",
+  "targets": {}
+}
