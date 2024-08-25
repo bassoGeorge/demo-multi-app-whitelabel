@@ -22,7 +22,11 @@ export function ThemeProvider({
     () =>
       extendTheme({
         ...themeBase,
-        ...themeInput,
+        colorSchemes: {
+          light: {
+            palette: themeInput.palette,
+          },
+        },
       }),
     [themeInput]
   );
