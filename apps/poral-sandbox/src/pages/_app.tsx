@@ -3,6 +3,7 @@ import Head from 'next/head';
 import './styles.css';
 import { SandboxTheme } from '@multi-app-whitelabel/theme-sandbox';
 import { ThemeProvider } from '@multi-app-whitelabel/design-system';
+import { StandardAppLayout } from '@multi-app-whitelabel/shared';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
@@ -12,7 +13,9 @@ function CustomApp({ Component, pageProps }: AppProps) {
       </Head>
       <main className="app">
         <ThemeProvider theme={SandboxTheme}>
-          <Component {...pageProps} />
+          <StandardAppLayout>
+            <Component {...pageProps} />
+          </StandardAppLayout>
         </ThemeProvider>
       </main>
     </>
