@@ -71,6 +71,9 @@
     },
     "build": {
       "dependsOn": ["^build", "assets", "pre-build"]
+    },
+    "dev": {
+      "dependsOn": ["assets"]
     }
   }
 }
