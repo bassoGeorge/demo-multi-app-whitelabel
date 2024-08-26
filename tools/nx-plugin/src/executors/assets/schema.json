@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "version": 2,
+  "title": "Assets executor",
+  "description": "Copies static assets from libraries with /assets folder into the public folder of the current nextjs project",
+  "type": "object",
+  "properties": {
+    "from": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of projects to copy static assets from"
+    }
+  },
+  "required": ["from"]
+}

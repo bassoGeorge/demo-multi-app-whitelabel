@@ -68,6 +68,9 @@
       "cache": true,
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
+    },
+    "build": {
+      "dependsOn": ["^build", "assets", "pre-build"]
     }
   }
 }

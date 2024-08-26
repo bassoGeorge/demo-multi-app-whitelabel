@@ -1,0 +1,9 @@
+{
+  "executors": {
+    "assets": {
+      "implementation": "./src/executors/assets/executor",
+      "schema": "./src/executors/assets/schema.json",
+      "description": "assets executor"
+    }
+  }
+}
