@@ -34,7 +34,8 @@
       "plugin": "@nx/jest/plugin",
       "options": {
         "targetName": "test"
-      }
+      },
+      "exclude": ["apps/mock-server-e2e/**/*"]
     },
     {
       "plugin": "@nx/vite/plugin",
@@ -74,6 +75,11 @@
     },
     "dev": {
       "dependsOn": ["assets"]
+    },
+    "@nx/esbuild:esbuild": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
   }
 }
