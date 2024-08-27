@@ -3,7 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/mock-server/src",
   "projectType": "application",
-  "tags": [],
+  "tags": ["scope:support", "type:app"],
   "targets": {
     "build": {
       "executor": "@nx/esbuild:esbuild",
@@ -37,7 +37,7 @@
         }
       }
     },
-    "serve": {
+    "dev": {
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "dependsOn": ["build"],
@@ -54,5 +54,6 @@
         }
       }
     }
-  }
+  },
+  "implicitDependencies": ["content-server"]
 }

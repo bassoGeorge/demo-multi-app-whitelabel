@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "yarn dev:sandbox",
-    "dev:sandbox": "nx dev portal-sandbox --port 3000",
-    "dev:client-a": "nx dev portal-client-a --port 3001",
+    "dev:sandbox": "concurrently \"yarn nx dev sandbox\" \"yarn nx dev mock-server\"",
+    "dev:client-a": "concurrently \"yarn nx dev active\" \"yarn nx dev mock-server\"",
     "graph": "nx graph"
   },
   "private": true,
@@ -16,6 +16,7 @@
     "@nx/devkit": "19.6.0",
     "@tanstack/react-query": "^5.52.2",
     "axios": "^1.7.4",
+    "concurrently": "^8.2.2",
     "express": "~4.18.1",
     "next": "14.2.3",
     "react": "18.3.1",

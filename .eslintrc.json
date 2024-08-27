@@ -22,6 +22,14 @@
                 "onlyDependOnLibsWithTags": ["*"]
               },
               {
+                "sourceTag": "*",
+                "notDependOnLibsWithTags": ["scope:support"]
+              },
+              {
+                "sourceTag": "type:lib",
+                "onlyDependOnLibsWithTags": ["type:lib"]
+              }
+              {
                 "sourceTag": "type:app",
                 "onlyDependOnLibsWithTags": ["type:ui", "type:util"]
               },
