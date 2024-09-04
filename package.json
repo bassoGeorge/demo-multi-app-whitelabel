@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "yarn dev:sandbox",
-    "dev:sandbox": "concurrently \"yarn nx dev sandbox\" \"yarn nx dev mock-server\"",
-    "dev:client-a": "concurrently \"yarn nx dev active\" \"yarn nx dev mock-server\"",
+    "dev:sandbox": "concurrently \"yarn nx dev portal-sandbox\" \"yarn nx dev mock-server\"",
+    "dev:client-a": "concurrently \"yarn nx dev portal-client-a\" \"yarn nx dev mock-server\"",
     "graph": "nx graph"
   },
   "private": true,
@@ -15,10 +15,12 @@
     "@mui/material": "^5.16.7",
     "@nx/devkit": "19.6.0",
     "@tanstack/react-query": "^5.52.2",
+    "@types/ramda": "^0.30.2",
     "axios": "^1.7.4",
     "concurrently": "^8.2.2",
     "express": "~4.18.1",
     "next": "14.2.3",
+    "ramda": "^0.30.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "tslib": "^2.3.0"
