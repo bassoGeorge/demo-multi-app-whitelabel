@@ -1,6 +1,8 @@
 {
-  "$schema": "../../schemas/CommonContent.CommonContent.schema.json",
-  "header": {
-    "title": "Common title for sandbox"
+  "$schema": "../../schemas/CommonContent.CommonContentJson.schema.json",
+  "components": {
+    "header": {
+      "title": "Common title for sandbox"
+    }
   }
 }

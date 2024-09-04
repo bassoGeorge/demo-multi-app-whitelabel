@@ -1,6 +1,9 @@
+import { ContentJson } from "./content-helpers";
+
 export type CommonContent = {
   header: {
     title: string;
   };
-  "$schema": string;
 }
+
+export type CommonContentJson = ContentJson<CommonContent>;

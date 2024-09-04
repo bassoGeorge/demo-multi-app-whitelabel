@@ -1,14 +1,18 @@
+import { CommonContent } from '@multi-app-whitelabel/utils';
 import { useQuery } from '@tanstack/react-query';
 import { useRouter } from 'next/router';
 import { replace, tail } from 'ramda';
 import { createContext, useContext } from 'react';
 import { useAPI } from '../api/useAPI';
-import { commonContentQueryFn, pageContentQueryFn } from './content-queris';
-
+import {
+  AnyPageContent,
+  commonContentQueryFn,
+  pageContentQueryFn,
+} from './content-queris';
 
 type ContentContext = {
-  common: Record<string, unknown>;
-  page: Record<string, unknown>;
+  common: CommonContent;
+  page: AnyPageContent;
   pageContentStatus: 'pending' | 'ready' | 'error';
 };
 
