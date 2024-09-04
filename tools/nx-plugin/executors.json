@@ -4,6 +4,11 @@
       "implementation": "./src/executors/assets/executor",
       "schema": "./src/executors/assets/schema.json",
       "description": "assets executor"
+    },
+    "ts-to-json-schema": {
+      "implementation": "./src/executors/ts-to-json-schema/executor",
+      "schema": "./src/executors/ts-to-json-schema/schema.json",
+      "description": "TS to json-schema executor"
     }
   }
 }

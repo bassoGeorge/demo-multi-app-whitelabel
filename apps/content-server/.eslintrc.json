@@ -1,5 +1,8 @@
 {
-  "extends": ["../../.eslintrc.json"],
+  "extends": [
+    "../../.eslintrc.json",
+    "plugin:json-schema-validator/recommended"
+  ],
   "ignorePatterns": ["!**/*"],
   "overrides": [
     {
@@ -13,6 +16,12 @@
     {
       "files": ["*.js", "*.jsx"],
       "rules": {}
+    },
+    {
+      "files": ["static/**/*.json"],
+      "rules": {
+        "json-schema-validator/no-invalid": "error"
+      }
     }
   ]
 }

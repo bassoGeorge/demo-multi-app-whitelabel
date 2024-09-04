@@ -1,7 +1,6 @@
 {
-  "components": {
-    "header": {
-      "title": "Content Server"
-    }
+  "$schema": "../../schemas/CommonContent.CommonContent.schema.json",
+  "header": {
+    "title": "Common title for sandbox"
   }
 }

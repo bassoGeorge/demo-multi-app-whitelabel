@@ -13,7 +13,7 @@ export function commonContentQueryFn(api: AxiosInstance) {
       `${CONTENT_RESOURCE}/${clientId}/common.json`
     );
 
-    return data.components;
+    return data;
   };
 }
 
@@ -28,7 +28,7 @@ export function pageContentQueryFn(api: AxiosInstance) {
         `${CONTENT_RESOURCE}/${clientId}/pages/${pageKey}.json`
       );
 
-      return data.components ?? {};
+      return data ?? {};
     } catch (e: unknown) {
       if ((e as AxiosError)?.response?.status === 404) {
         return {}; // Some pages *might* not have content
