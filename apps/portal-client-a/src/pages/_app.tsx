@@ -8,6 +8,9 @@ import {
   StandardAppLayout,
 } from '@multi-app-whitelabel/shared';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { runClientSpecificCustomisations } from '../runClientSpecificCustomisations';
+
+runClientSpecificCustomisations();
 
 const queryClient = new QueryClient();
 
