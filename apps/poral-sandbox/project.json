@@ -12,5 +12,6 @@
         "from": ["p-shared-assets"]
       }
     }
-  }
+  },
+  "implicitDependencies": ["p-shared-assets"]
 }
