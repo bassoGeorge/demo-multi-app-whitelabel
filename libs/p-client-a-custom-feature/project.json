@@ -1,0 +1,9 @@
+{
+  "name": "p-client-a-custom-feature",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/p-client-a-custom-feature/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project p-client-a-custom-feature --web",
+  "targets": {}
+}

@@ -22,6 +22,9 @@
         "libs/design-system-utils/src/index.ts"
       ],
       "@multi-app-whitelabel/nx-plugin": ["tools/nx-plugin/src/index.ts"],
+      "@multi-app-whitelabel/p-client-a-custom-feature": [
+        "libs/p-client-a-custom-feature/src/index.ts"
+      ],
       "@multi-app-whitelabel/p-dashboard": ["libs/p-dashboard/src/index.ts"],
       "@multi-app-whitelabel/shared": ["libs/shared/src/index.ts"],
       "@multi-app-whitelabel/theme-client-a": [
