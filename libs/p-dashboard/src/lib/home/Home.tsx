@@ -1,4 +1,4 @@
-import { StarServicesInfo, useContent } from '@multi-app-whitelabel/shared';
+import { StarServiceOne, useContent } from '@multi-app-whitelabel/shared';
 import { toDollarsAndCents } from '@multi-app-whitelabel/utils';
 import { Card, Typography } from '@mui/material';
 import { FeatureBlocks } from '../feature-blocks/FeatureBlocks';
@@ -17,7 +17,7 @@ export function Home() {
   return (
     <div>
       <h1>Welcome to Home!</h1>
-      <StarServicesInfo />
+      <StarServiceOne />
 
       <Card sx={{ maxWidth: 500, minHeight: 500, backgroundColor: 'warmNeutral.light' }} >
         <Typography variant="h5">This is just a test</Typography>

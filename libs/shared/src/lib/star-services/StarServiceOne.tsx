@@ -1,7 +1,7 @@
 import { Button } from '@multi-app-whitelabel/design-system'
 import { toDollarsAndCents } from '@multi-app-whitelabel/utils';
 
-export function StarServicesInfo() {
+export function StarServiceOne() {
   return (
     <div>
       <h1>Welcome to StarServicesInfo!</h1>
