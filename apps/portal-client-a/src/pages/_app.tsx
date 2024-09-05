@@ -3,7 +3,13 @@ import Head from 'next/head';
 import './styles.css';
 import { ClientATheme } from '@multi-app-whitelabel/theme-client-a';
 import { ThemeProvider } from '@multi-app-whitelabel/design-system';
-import { StandardAppLayout } from '@multi-app-whitelabel/shared';
+import {
+  ContentProvider,
+  StandardAppLayout,
+} from '@multi-app-whitelabel/shared';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
@@ -12,11 +18,15 @@ function CustomApp({ Component, pageProps }: AppProps) {
         <title>Welcome to portal-client-a!</title>
       </Head>
       <main className="app">
-        <ThemeProvider theme={ClientATheme}>
-          <StandardAppLayout>
-            <Component {...pageProps} />
-          </StandardAppLayout>
-        </ThemeProvider>
+        <QueryClientProvider client={queryClient}>
+          <ThemeProvider theme={ClientATheme}>
+            <ContentProvider client="client-a">
+              <StandardAppLayout>
+                <Component {...pageProps} />
+              </StandardAppLayout>
+            </ContentProvider>
+          </ThemeProvider>
+        </QueryClientProvider>
       </main>
     </>
   );

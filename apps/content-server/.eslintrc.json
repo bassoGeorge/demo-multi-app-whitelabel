@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "../../.eslintrc.json",
+    "plugin:json-schema-validator/recommended"
+  ],
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    },
+    {
+      "files": ["static/**/*.json"],
+      "rules": {
+        "json-schema-validator/no-invalid": "error"
+      }
+    }
+  ]
+}

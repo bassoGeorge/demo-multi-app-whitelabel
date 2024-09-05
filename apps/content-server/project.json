@@ -1,0 +1,28 @@
+{
+  "name": "content-server",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/content-server/static",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project content-server --web",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "inputs": [
+        "default",
+        "^default",
+        "{workspaceRoot}/.eslintrc.json",
+        "{projectRoot}/.eslintrc.json",
+        "{workspaceRoot}/tools/eslint-rules/**/*",
+        { "externalDependencies": ["eslint"] }
+      ]
+    },
+    "pre-build": {
+      "executor": "@multi-app-whitelabel/nx-plugin:ts-to-json-schema",
+      "options": {
+        "modelRoots": ["libs/utils/src/api-models/content"],
+        "outputPath": "{workspaceRoot}/apps/content-server/schemas"
+      }
+    }
+  }
+}

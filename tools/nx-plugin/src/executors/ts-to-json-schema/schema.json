@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "version": 2,
+  "title": "Ts to json-schema executor",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "modelRoots": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of content model root paths"
+    },
+    "outputPath": {
+      "type": "string",
+      "description": "Output directory to generate schemas"
+    }
+  },
+  "required": ["modelRoots", "outputPath"]
+}
